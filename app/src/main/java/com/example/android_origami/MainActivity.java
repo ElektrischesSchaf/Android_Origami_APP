@@ -6,8 +6,11 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
     // 01
     //private OpenGLView openGLView;
-
+    public static float offset1=85;
+    public static float scale_heart=0.01f;
     private OpenGLView mainSurfaceview;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
