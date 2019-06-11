@@ -11,8 +11,8 @@
 
     <FrameLayout
         android:id="@+id/glFrame"
-        android:layout_width="match_parent"
-        android:layout_height="612dp"
+        android:layout_width="1073dp"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -26,28 +26,107 @@
         android:id="@+id/button_forward"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="408dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:onClick="play_forward"
         android:text="@string/forward"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/glFrame"
-        app:layout_constraintTop_toBottomOf="@+id/glFrame"
-        app:layout_constraintVertical_bias="0.489" />
+        app:layout_constraintBottom_toTopOf="@+id/button_backward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/glFrame" />
 
     <Button
         android:id="@+id/button_backward"
         android:layout_width="100dp"
         android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="60dp"
         android:onClick="play_backward"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="260dp"
-        android:layout_marginBottom="8dp"
         android:text="@string/backward"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_forward"
-        app:layout_constraintTop_toBottomOf="@+id/glFrame"
-        app:layout_constraintVertical_bias="0.471" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/glFrame" />
+
+    <Button
+        android:id="@+id/button_plue_x"
+        android:onClick="plus_x"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/plus_x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/glFrame"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_minus_x"
+        android:onClick="minus_x"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/minus_x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/glFrame"
+        app:layout_constraintTop_toBottomOf="@+id/button_plue_x" />
+
+    <Button
+        android:id="@+id/button_plus_y"
+        android:onClick="plus_y"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/plus_y"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/glFrame"
+        app:layout_constraintTop_toBottomOf="@+id/button_minus_x" />
+
+    <Button
+        android:id="@+id/button_minus_y"
+        android:onClick="minus_y"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/minus_y"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/glFrame"
+        app:layout_constraintTop_toBottomOf="@+id/button_plus_y" />
+
+    <Button
+        android:id="@+id/button_plus_z"
+        android:onClick="plus_z"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/plus_z"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/glFrame"
+        app:layout_constraintTop_toBottomOf="@+id/button_minus_y" />
+
+    <Button
+        android:id="@+id/button_minus_z"
+        android:onClick="minus_z"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/minus_z"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/glFrame"
+        app:layout_constraintTop_toBottomOf="@+id/button_plus_z" />
 
 </android.support.constraint.ConstraintLayout>

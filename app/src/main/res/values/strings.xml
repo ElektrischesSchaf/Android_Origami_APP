@@ -2,4 +2,10 @@
     <string name="app_name">My Origami</string>
     <string name="forward"> Next </string>
     <string name="backward"> Back </string>
+    <string name="plus_x">+x</string>
+    <string name="minus_x">-x</string>
+    <string name="plus_y">+y</string>
+    <string name="minus_y">-y</string>
+    <string name="plus_z">+z</string>
+    <string name="minus_z">-z</string>
 </resources>

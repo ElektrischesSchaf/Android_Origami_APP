@@ -12,7 +12,8 @@ import android.widget.FrameLayout;
 public class MainActivity extends AppCompatActivity {
 
     private float temp=5f;
-
+    private float temp_rotate=5f;
+    public static float scale_factor=0.01f;
 
     // Used to load the 'native-lib' library on application startup.
     static {
@@ -86,5 +87,29 @@ public class MainActivity extends AppCompatActivity {
     public void play_backward(View view) {
         OpenGLRenderer.rotation= OpenGLRenderer.rotation-temp;
 
+    }
+
+    public void plus_x(View view) {
+        OpenGLRenderer.xRot+=temp_rotate;
+    }
+
+    public void minus_x(View view) {
+        OpenGLRenderer.xRot-=temp_rotate;
+    }
+
+    public void plus_y(View view) {
+        OpenGLRenderer.yRot+=temp_rotate;
+    }
+
+    public void minus_y(View view) {
+        OpenGLRenderer.yRot-=temp_rotate;
+    }
+
+    public void plus_z(View view) {
+        OpenGLRenderer.zRot+=temp_rotate;
+    }
+
+    public void minus_z(View view) {
+        OpenGLRenderer.zRot-=temp_rotate;
     }
 }
