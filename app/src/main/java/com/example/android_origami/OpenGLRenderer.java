@@ -79,6 +79,40 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
         triangle.draw(gl);
         */
 
+        if(MainActivity.play_button_pressed==true)
+        {
+            rotation+=MainActivity.temp;
+        }
+
+        if(MainActivity.plus_x_pressed==true)
+        {
+            xRot+=MainActivity.temp_rotate;
+        }
+
+        if(MainActivity.minus_x_pressed==true)
+        {
+            xRot-=MainActivity.temp_rotate;
+        }
+
+        if(MainActivity.plus_y_pressed==true)
+        {
+            yRot+=MainActivity.temp_rotate;
+        }
+
+        if(MainActivity.minus_y_pressed==true)
+        {
+            yRot-=MainActivity.temp_rotate;
+        }
+
+        if(MainActivity.plus_z_pressed==true)
+        {
+            zRot+=MainActivity.temp_rotate;
+        }
+
+        if(MainActivity.minus_z_pressed==true)
+        {
+            zRot-=MainActivity.temp_rotate;
+        }
 
         gl.glPushMatrix();
 

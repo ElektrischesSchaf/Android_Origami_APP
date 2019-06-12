@@ -29,22 +29,21 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:onClick="play_forward"
         android:text="@string/forward"
-        app:layout_constraintBottom_toTopOf="@+id/button_backward"
+        app:layout_constraintBottom_toTopOf="@+id/button_reset"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toEndOf="@+id/glFrame" />
 
     <Button
-        android:id="@+id/button_backward"
+        android:id="@+id/button_reset"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="60dp"
-        android:onClick="play_backward"
-        android:text="@string/backward"
+        android:onClick="play_reset"
+        android:text="@string/refresh"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
@@ -52,7 +51,6 @@
 
     <Button
         android:id="@+id/button_plue_x"
-        android:onClick="plus_x"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -65,7 +63,6 @@
 
     <Button
         android:id="@+id/button_minus_x"
-        android:onClick="minus_x"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -79,7 +76,6 @@
 
     <Button
         android:id="@+id/button_plus_y"
-        android:onClick="plus_y"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -92,7 +88,6 @@
 
     <Button
         android:id="@+id/button_minus_y"
-        android:onClick="minus_y"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -105,7 +100,6 @@
 
     <Button
         android:id="@+id/button_plus_z"
-        android:onClick="plus_z"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -118,7 +112,6 @@
 
     <Button
         android:id="@+id/button_minus_z"
-        android:onClick="minus_z"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
