@@ -14,11 +14,17 @@ import android.widget.FrameLayout;
 
 import java.sql.Time;
 
+import static java.lang.Math.abs;
+import static java.lang.Math.atan;
+
 public class MainActivity extends AppCompatActivity {
 
     public static float temp=5f;
-    public static float temp_rotate=5f;
+    public static float play_speed=3f;
+    public static float temp_rotate=1f;
     public static float scale_factor=0.01f;
+
+    private static float PI=3.1415f;
 
     public static boolean play_button_pressed=false;
     public static boolean plus_x_pressed=false;
@@ -111,6 +117,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         view.onResume();
+    }
+
+    public static double angle(float x1, float y1, float x2, float y2)
+    {
+        float vecx= abs(x2 - x1);
+        float vecy = abs(y2 - y1);
+        double angle = ( atan(vecy / vecx) ) * (180f / PI);
+        return angle;
     }
 
     /**
@@ -280,6 +294,25 @@ public class MainActivity extends AppCompatActivity {
         OpenGLRenderer.yRot=0f;
         OpenGLRenderer.zRot=0f;
         OpenGLRenderer.rotation=0f;
+        OpenGLRenderer.totalangle=0f;
+        OpenGLRenderer.flip =0f;
+        OpenGLRenderer.flip1 =0f ;
+        OpenGLRenderer.flip2 =0f ;
+        OpenGLRenderer.flip3 =0f ;
+        OpenGLRenderer.flip4 =0f ;
+        OpenGLRenderer.flip5 =0f ;
+        OpenGLRenderer.flip6 =0f ;
+        OpenGLRenderer.flip7 =0f ;
+        OpenGLRenderer.flip8 =0f ;
+        OpenGLRenderer.step1=1 ;
+        OpenGLRenderer.step2 =0 ;
+        OpenGLRenderer.step3 =0 ;
+        OpenGLRenderer.step4 =0 ;
+        OpenGLRenderer.step5 =0 ;
+        OpenGLRenderer.step6 =0 ;
+        OpenGLRenderer.step7 =0 ;
+        OpenGLRenderer.step8 =0 ;
+        OpenGLRenderer.finish =0 ;
     }
 
     /*

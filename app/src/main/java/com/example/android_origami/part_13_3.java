@@ -11,19 +11,20 @@ import javax.microedition.khronos.opengles.GL10;
 /*
  * A triangle with 3 vertices.
  */
-public class part_1 {
+public class part_13_3 {
     private FloatBuffer vertexBuffer;  // Buffer for vertex-array
     private ByteBuffer indexBuffer;    // Buffer for index-array
 
+
     private float[] vertices = {  // Vertices of the triangle
-            0.0f * MainActivity.scale_factor,  0.0f, 0.0f, // 0. top
-            0.0f * MainActivity.scale_factor, 25.0f * MainActivity.scale_factor, 0.0f, // 1. left-bottom
-           -25.0f * MainActivity.scale_factor, 25.0f * MainActivity.scale_factor, 0.0f  // 2. right-bottom
+            0f * MainActivity.scale_factor, 0f * MainActivity.scale_factor, 0.0f,
+            25f * MainActivity.scale_factor, 25f * MainActivity.scale_factor, 0.0f,
+            0f * MainActivity.scale_factor, 25f * MainActivity.scale_factor, 0.0f
     };
-    private byte[] indices = { 0, 1, 2 }; // Indices to above vertices (in CCW)
+    private byte[] indices = { 0, 1, 2}; // Indices to above vertices (in CCW)
 
     // Constructor - Setup the data-array buffers
-    public part_1() {
+    public part_13_3() {
         // Setup vertex-array buffer. Vertices in float. A float has 4 bytes.
         ByteBuffer vbb = ByteBuffer.allocateDirect(vertices.length * 4);
         vbb.order(ByteOrder.nativeOrder()); // Use native byte order
@@ -46,6 +47,6 @@ public class part_1 {
         // Draw the primitives via index-array
         gl.glDrawElements(GL10.GL_TRIANGLES, indices.length, GL10.GL_UNSIGNED_BYTE, indexBuffer);
         gl.glDisableClientState(GL10.GL_VERTEX_ARRAY);
-        Log.d("In part_1: ","draw(GL10 gl)");
+        Log.d("In part_13_3: ","draw(GL10 gl)");
     }
 }
