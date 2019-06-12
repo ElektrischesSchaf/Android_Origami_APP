@@ -20,7 +20,7 @@ import static java.lang.Math.atan;
 public class MainActivity extends AppCompatActivity {
 
     public static float temp=5f;
-    public static float play_speed=3f;
+    public static float play_speed=1f;
     public static float temp_rotate=1f;
     public static float scale_factor=0.01f;
 

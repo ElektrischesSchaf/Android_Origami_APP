@@ -91,6 +91,10 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
         gl.glHint(GL10.GL_PERSPECTIVE_CORRECTION_HINT, GL10.GL_NICEST);
 
 
+        // add the following two so that the alpha value of glColor4f can be enabled
+        gl.glEnable(GL10.GL_BLEND);
+        gl.glBlendFunc(GL10.GL_SRC_ALPHA, GL10.GL_ONE);
+
         Log.d("onSurfaceCreated","Finished");
 
     }
@@ -239,49 +243,53 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
 
         // part 1 below
         gl.glPushMatrix();
+        gl.glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
         if(step1==1 || step2==1)
         {
+
             gl.glTranslatef(215f * MainActivity.scale_factor, 190f * MainActivity.scale_factor, 0f);
             gl.glRotatef(-flip3, 0, 1, 0);
-            gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+            //gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
             part_1.draw(gl);
         }
 
         if (step3 == 1)
         {
+            gl.glColor4f( 1f, 1f, 1f, 1f);
             gl.glTranslatef(130f * MainActivity.scale_factor, 190f * MainActivity.scale_factor, 0f);
             gl.glRotatef(-flip3, 0, 1, 0);
-            gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+            //gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
             part_1_2.draw(gl);
         }
         if (step4 == 1)
         {
             gl.glTranslatef(130f * MainActivity.scale_factor, 190f * MainActivity.scale_factor, 0f);
             gl.glRotatef(-180f, 0, 1, 0);
-            gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+            //gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
             part_1_2.draw(gl);
         }
         if(step5 == 1 )
         {
             gl.glTranslatef(130f * MainActivity.scale_factor, 190f * MainActivity.scale_factor, 0f);
             gl.glRotatef(-180f, 0, 1, 0);
-            gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+            //gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
             part_1_2.draw(gl);
         }
         if(step6==1)
         {
             gl.glTranslatef(130f * MainActivity.scale_factor, 190f * MainActivity.scale_factor, 0f);
             gl.glRotatef(-180f, 0, 1, 0);
-            gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+            //gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
             part_1_2.draw(gl);
         }
         if (step7==1)
         {
+            gl.glColor4f( 1f, 1f, 1f, 1f);
             gl.glTranslatef((130f - 85f)* MainActivity.scale_factor, (20f + 85f + 85f)* MainActivity.scale_factor, 0);
             gl.glRotatef(-45, 0, 0, 1);
             gl.glRotatef(flip7, 0, 1, 0);
             gl.glRotatef(45, 0, 0, 1);
-            gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+            // gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
             part_1_3.draw(gl);
 
         }
@@ -291,7 +299,7 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
             gl.glRotatef(-45, 0, 0, 1);
             gl.glRotatef(180, 0, 1, 0);
             gl.glRotatef(45, 0, 0, 1);
-            gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+            //gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
             part_1_3.draw(gl);
 
         }
@@ -300,10 +308,12 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
 
         // part 2 below
         gl.glPushMatrix();
+        gl.glColor4f( 1f,0f,0f, 1f);
         gl.glTranslatef(130f * MainActivity.scale_factor, 85f * MainActivity.scale_factor, 0f);
 
         if (step3 == 1)
         {
+            gl.glColor4f( 1f, 1f, 1f, 1f);
             gl.glRotatef(angle2, 0, 0, 1);
             gl.glRotatef(-flip3, 1, 0, 0);
             gl.glRotatef(-angle2, 0, 0, 1);
@@ -321,7 +331,7 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
             gl.glRotatef(-angle2, 0, 0, 1);
         }
 
-        gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+        //gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
         part_2.draw(gl);
 
         gl.glPopMatrix();
@@ -329,9 +339,11 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
 
         // part 3 below
         gl.glPushMatrix();
+        gl.glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
         gl.glTranslatef(130f * MainActivity.scale_factor,85f * MainActivity.scale_factor,0f );
         if (step2 == 1)
         {
+            gl.glColor4f( 1f, 1f, 1f, 1f);
             gl.glRotatef(angle3a, 0, 0, 1);
             gl.glRotatef(-flip2, 1, 0, 0);
             gl.glRotatef(-angle3a, 0, 0, 1);
@@ -369,16 +381,18 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
             gl.glRotatef(-180, 1, 0, 0);
             gl.glRotatef(-angle3b, 0, 0, 1);
         }
-        gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+        //gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
         part_3.draw(gl);
         gl.glPopMatrix();
         // part 3 above
 
         // part 4 below
         gl.glPushMatrix();
+        gl.glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
         gl.glTranslatef(130f * MainActivity.scale_factor,85f * MainActivity.scale_factor,0f );
         if (step2 == 1)
         {
+            gl.glColor4f( 1f, 1f, 1f, 1f);
             gl.glRotatef(angle4, 0, 0, 1);
             gl.glRotatef(-flip2, 1, 0, 0);
             gl.glRotatef(-angle4, 0, 0, 1);
@@ -401,16 +415,18 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
             gl.glRotatef(-180, 1, 0, 0);
             gl.glRotatef(-angle4, 0, 0, 1);
         }
-        gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+        //gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
         part_4.draw(gl);
         gl.glPopMatrix();
         // part 4 above
 
         // part 5 below
         gl.glPushMatrix();
+        gl.glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
         gl.glTranslatef(130f * MainActivity.scale_factor,190f * MainActivity.scale_factor,0f );
         if (step3 == 1)
         {
+            gl.glColor4f( 1f, 1f, 1f, 1f);
             gl.glRotatef(angle5a, 0, 0, 1);
             gl.glRotatef(-flip3, 1, 0, 0);
             gl.glRotatef(-angle5a, 0, 0, 1);
@@ -423,6 +439,7 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
         }
         if (step5 == 1)
         {
+            gl.glColor4f( 1f, 1f, 1f, 1f);
             gl.glRotatef(angle5a, 0, 0, 1);
             gl.glRotatef(-180, 1, 0, 0);
             gl.glRotatef(-angle5a, 0, 0, 1);
@@ -442,16 +459,18 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
             gl.glRotatef(-180, 1, 0, 0);
             gl.glRotatef(-angle5b, 0, 0, 1);
         }
-        gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+        //gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
         part_5.draw(gl);
         gl.glPopMatrix();
         // part 5 above
 
         // part 6 below
         gl.glPushMatrix();
+        gl.glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
         gl.glTranslatef(130f * MainActivity.scale_factor,190f * MainActivity.scale_factor,0f );
         if (step5 == 1)
         {
+            gl.glColor4f( 1f, 1f, 1f, 1f);
             gl.glRotatef(angle6, 0, 0, 1);
             gl.glRotatef(-flip5, 1, 0, 0);
             gl.glRotatef(-angle6, 0, 0, 1);
@@ -463,41 +482,45 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
             gl.glRotatef(-angle6, 0, 0, 1);
         }
 
-        gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+        //gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
         part_6.draw(gl);
         gl.glPopMatrix();
         // part 6 above
 
         // part 7 below
         gl.glPushMatrix();
+        gl.glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
         gl.glTranslatef(130f * MainActivity.scale_factor,85f * MainActivity.scale_factor,0f );
-        gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+        //gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
         part_7.draw(gl);
         gl.glPopMatrix();
         // part 7 above
 
         // part 8 below
         gl.glPushMatrix();
+        gl.glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
         gl.glTranslatef(130f * MainActivity.scale_factor,85f * MainActivity.scale_factor,0f );
         if (step4 == 1)
         {
+            gl.glColor4f( 1f, 1f, 1f, 1f);
             gl.glRotatef(-flip4, 1, 0, 0);
         }
         if (step5 == 1 || step6 == 1 || step7 == 1 || step8 == 1)
         {
             gl.glRotatef(-180, 1, 0, 0);
         }
-        gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+        //gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
         part_8.draw(gl);
         gl.glPopMatrix();
         // part 8 above
 
         // part 9 below
         gl.glPushMatrix();
+        gl.glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
         gl.glTranslatef(130f * MainActivity.scale_factor,85f * MainActivity.scale_factor,0f );
         if (step2 == 1)
         {
-
+            gl.glColor4f( 1f, 1f, 1f, 1f);
             gl.glRotatef(angle9a, 0, 0, 1);
             gl.glRotatef(-flip2, 1, 0, 0);
             gl.glRotatef(-angle9a, 0, 0, 1);
@@ -530,37 +553,44 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
             gl.glRotatef(-180, 0, 1, 0);
             gl.glRotatef(-angle9b, 0, 0, 1);
         }
-        gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+        //gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
         part_9.draw(gl);
         gl.glPopMatrix();
         // part 9 above
 
         // part 10 below
         gl.glPushMatrix();
+        gl.glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
         gl.glTranslatef(0f * MainActivity.scale_factor,105f * MainActivity.scale_factor,0f );
 
         if (step1==1)
         {
+            if(totalangle!=0) {
+                gl.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+            }
             gl.glRotatef(angle10,0,0,1f);
             gl.glRotatef(flip1, 1f, 0, 0);
             gl.glRotatef(-angle10, 0, 0, 1);
         }
         if (step2 == 1 || step3 == 1 || step4 == 1 || step5 == 1 || step6 == 1 || step7 == 1 || step8 == 1)
         {
+            gl.glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
             gl.glRotatef(angle10, 0, 0, 1);
             gl.glRotatef(180, 1, 0, 0);
             gl.glRotatef(-angle10, 0, 0, 1);
         }
-        gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+        //gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
         part_10.draw(gl);
         gl.glPopMatrix();
         // part 10 above
 
         // part 11 below
         gl.glPushMatrix();
+        gl.glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
         gl.glTranslatef(25f * MainActivity.scale_factor,85f * MainActivity.scale_factor,0f );
         if (step6 == 1)
         {
+            gl.glColor4f( 1f, 1f, 1f, 1f);
             gl.glRotatef(angle11, 0, 0, 1);
             gl.glRotatef(flip6, 1, 0, 0);
             gl.glRotatef(-angle11, 0, 0, 1);
@@ -571,16 +601,18 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
             gl.glRotatef(180, 1, 0, 0);
             gl.glRotatef(-angle11, 0, 0, 1);
         }
-        gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+        //gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
         part_11.draw(gl);
         gl.glPopMatrix();
         // part 11 above
 
         // part 12 below
         gl.glPushMatrix();
+        gl.glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
         gl.glTranslatef(25f * MainActivity.scale_factor,85f * MainActivity.scale_factor,0f );
         if (step4 == 1)
         {
+            gl.glColor4f( 1f, 1f, 1f, 1f);
             gl.glRotatef(-flip4, 1, 0, 0);
         }
         if (step5 == 1)
@@ -589,6 +621,7 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
         }
         if (step6 == 1)
         {
+            gl.glColor4f( 1f, 1f, 1f, 1f);
             gl.glRotatef(-180, 1, 0, 0);
             gl.glRotatef(angle12b, 0, 0, 1);
             gl.glRotatef(flip6, 1, 0, 0);
@@ -603,21 +636,23 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
             gl.glRotatef(180, 1, 0, 0);
             gl.glRotatef(-angle12b, 0, 0, 1);
         }
-        gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+        //gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
         part_12.draw(gl);
         gl.glPopMatrix();
         // part 12 above
 
         // part 13 below
         gl.glPushMatrix();
+        gl.glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
         if (step1 == 1 || step2 == 1 || step3 == 1)
         {
             gl.glTranslatef(25f * MainActivity.scale_factor, 0f * MainActivity.scale_factor, 0f);
-            gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
+            // gl.glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
             part_13.draw(gl);
         }
         if (step4 == 1)
         {
+            gl.glColor4f( 1f, 1f, 1f, 1f);
             gl.glTranslatef(25f* MainActivity.scale_factor, 85f* MainActivity.scale_factor, 0);
             gl.glRotatef(-flip4, 1, 0, 0);
             part_13_2.draw(gl);
@@ -631,6 +666,11 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
         }
         if (step8 == 1)
         {
+            gl.glColor4f( 1f, 1f, 1f, 1f);
+            if(totalangle >= 180f * 8f)
+            {
+                gl.glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
+            }
             gl.glTranslatef(0f* MainActivity.scale_factor, (85f * 2f - 25f) * MainActivity.scale_factor, 0);
             gl.glRotatef(-45, 0, 0, 1);
             gl.glRotatef(flip8, 0, 1, 0);
