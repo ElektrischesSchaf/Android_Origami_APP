@@ -232,7 +232,7 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
 
         gl.glPushMatrix();
 
-        gl.glTranslatef(0f,0f, -3.0f);
+        gl.glTranslatef(0f,0f, -3.5f);
         gl.glRotatef(xRot, -100f*MainActivity.scale_factor, 0.0f, 0.0f);
         gl.glRotatef(yRot, 0.0f, -100f*MainActivity.scale_factor, 0.0f);
         gl.glRotatef(zRot, 0.0f, 0.0f, 1.0f);
