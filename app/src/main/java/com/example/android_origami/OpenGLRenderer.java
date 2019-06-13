@@ -5,6 +5,7 @@ import android.opengl.GLSurfaceView;
 import android.opengl.GLU;
 import android.opengl.Matrix;
 import android.util.Log;
+import android.widget.Toast;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
@@ -567,6 +568,8 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
         {
             if(totalangle!=0) {
                 gl.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+                //Toast toast = Toast.makeText(this, "Start!", Toast.LENGTH_LONG);
+                //toast.show();
             }
             gl.glRotatef(angle10,0,0,1f);
             gl.glRotatef(flip1, 1f, 0, 0);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,119 +7,148 @@
     android:background="@color/colorPrimary"
     tools:context=".MainActivity"
     tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="81dp">
+    tools:layout_editor_absoluteY="81dp"
+    android:orientation="horizontal">
 
-    <FrameLayout
-        android:id="@+id/glFrame"
-        android:layout_width="1073dp"
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        android:layout_weight="1">
 
-    </FrameLayout>
+        <FrameLayout
+            android:id="@+id/glFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
 
-    <Button
-        android:id="@+id/button_forward"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/forward"
-        app:layout_constraintBottom_toTopOf="@+id/button_reset"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toEndOf="@+id/glFrame" />
+        </FrameLayout>
+    </android.support.constraint.ConstraintLayout>
 
-    <Button
-        android:id="@+id/button_reset"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="60dp"
-        android:onClick="play_reset"
-        android:text="@string/refresh"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toEndOf="@+id/glFrame" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5">
 
-    <Button
-        android:id="@+id/button_plue_x"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/plus_x"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/glFrame"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button_minus_x"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/minus_x"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toEndOf="@+id/glFrame"
-        app:layout_constraintTop_toBottomOf="@+id/button_plue_x" />
+            <Button
+                android:id="@+id/button_forward"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@color/play_button_color"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:text="@string/forward"
+                android:textColor="@color/play_text_color"
+                android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/button_plus_y"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/plus_y"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/glFrame"
-        app:layout_constraintTop_toBottomOf="@+id/button_minus_x" />
+            <Button
+                android:id="@+id/button_plue_x"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/white_button"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:text="@string/plus_x"
+                android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/button_minus_y"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/minus_y"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/glFrame"
-        app:layout_constraintTop_toBottomOf="@+id/button_plus_y" />
+            <Button
+                android:id="@+id/button_minus_x"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/white_button"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:text="@string/minus_x"
+                android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/button_plus_z"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/plus_z"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/glFrame"
-        app:layout_constraintTop_toBottomOf="@+id/button_minus_y" />
+            <Button
+                android:id="@+id/button_plus_y"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/white_button"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:text="@string/plus_y"
+                android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/button_minus_z"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/minus_z"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/glFrame"
-        app:layout_constraintTop_toBottomOf="@+id/button_plus_z" />
+            <Button
+                android:id="@+id/button_minus_y"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/white_button"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:text="@string/minus_y"
+                android:textSize="18sp" />
 
-</android.support.constraint.ConstraintLayout>
+            <Button
+                android:id="@+id/button_minus_z"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/white_button"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:text="@string/minus_z"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button_plus_z"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/white_button"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:text="@string/plus_z"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button_reset"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="60dp"
+                android:background="@color/play_button_color"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:onClick="play_reset"
+                android:text="@string/refresh"
+                android:textColor="@color/play_text_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

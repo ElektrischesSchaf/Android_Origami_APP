@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">My Origami</string>
-    <string name="forward"> Next </string>
-    <string name="refresh"> Refresh </string>
+    <string name="forward"> play </string>
+    <string name="refresh"> Reset </string>
     <string name="plus_x">+x</string>
     <string name="minus_x">-x</string>
     <string name="plus_y">+y</string>
