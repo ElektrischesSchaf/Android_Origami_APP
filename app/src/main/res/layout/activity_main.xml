@@ -42,6 +42,7 @@
 
             <Button
                 android:id="@+id/button_forward"
+                android:textAllCaps="false"
                 android:layout_width="match_parent"
                 android:layout_height="27dp"
                 android:layout_marginStart="8dp"
@@ -52,101 +53,126 @@
                 android:fontFamily="@font/annie_use_your_telescope"
                 android:text="@string/forward"
                 android:textColor="@color/play_text_color"
-                android:textSize="18sp" />
+                android:textSize="30sp" />
 
-            <Button
-                android:id="@+id/button_plue_x"
-                android:layout_width="wrap_content"
-                android:layout_height="24dp"
-                android:layout_weight="1"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:background="@color/white_button"
-                android:fontFamily="@font/annie_use_your_telescope"
-                android:text="@string/plus_x"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/button_minus_x"
-                android:layout_width="wrap_content"
-                android:layout_height="28dp"
-                android:layout_weight="1"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="8dp"
-                android:background="@color/white_button"
-                android:fontFamily="@font/annie_use_your_telescope"
-                android:text="@string/minus_x"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/button_plus_y"
-                android:layout_width="wrap_content"
-                android:layout_height="28dp"
-                android:layout_weight="1"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:background="@color/white_button"
-                android:fontFamily="@font/annie_use_your_telescope"
-                android:text="@string/plus_y"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/button_minus_y"
-                android:layout_width="wrap_content"
-                android:layout_height="29dp"
-                android:layout_weight="1"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="8dp"
-                android:background="@color/white_button"
-                android:fontFamily="@font/annie_use_your_telescope"
-                android:text="@string/minus_y"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/button_minus_z"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="27dp"
+                android:gravity="center"
                 android:layout_weight="1"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:background="@color/white_button"
-                android:fontFamily="@font/annie_use_your_telescope"
-                android:text="@string/minus_z"
-                android:textSize="18sp" />
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/button_plus_z"
-                android:layout_width="wrap_content"
-                android:layout_height="32dp"
+                <Button
+                    android:id="@+id/button_minus_x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/x_axis_color"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/minus_x"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/button_plue_x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/x_axis_color"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/plus_x"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:gravity="center"
                 android:layout_weight="1"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="8dp"
-                android:background="@color/white_button"
-                android:fontFamily="@font/annie_use_your_telescope"
-                android:text="@string/plus_z"
-                android:textSize="18sp" />
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_minus_y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/y_axis_color"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/minus_y"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/button_plus_y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/y_axis_color"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/plus_y"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_minus_z"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/z_axis_color"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/minus_z"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/button_plus_z"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/z_axis_color"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/plus_z"
+                    android:textSize="22sp" />
+            </LinearLayout>
 
             <Button
                 android:id="@+id/button_reset"
+                android:textAllCaps="false"
                 android:layout_width="match_parent"
                 android:layout_height="27dp"
-                android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="60dp"
+                android:layout_weight="1"
                 android:background="@color/play_button_color"
                 android:fontFamily="@font/annie_use_your_telescope"
                 android:onClick="play_reset"
                 android:text="@string/refresh"
                 android:textColor="@color/play_text_color"
-                android:textSize="18sp" />
+                android:textSize="30sp" />
         </LinearLayout>
 
     </android.support.constraint.ConstraintLayout>
