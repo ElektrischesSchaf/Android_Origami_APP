@@ -210,22 +210,22 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
 
         if(MainActivity.plus_y_pressed==true)
         {
-            yRot+=MainActivity.temp_rotate;
+            yRot -= MainActivity.temp_rotate;
         }
 
         if(MainActivity.minus_y_pressed==true)
         {
-            yRot-=MainActivity.temp_rotate;
+            yRot += MainActivity.temp_rotate;
         }
 
         if(MainActivity.plus_z_pressed==true)
         {
-            zRot+=MainActivity.temp_rotate;
+            zRot -= MainActivity.temp_rotate;
         }
 
         if(MainActivity.minus_z_pressed==true)
         {
-            zRot-=MainActivity.temp_rotate;
+            zRot += MainActivity.temp_rotate;
         }
         // Handling Keys above
 
