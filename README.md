@@ -9,4 +9,4 @@ This is an upgraded version from [my previous OpenGL project](https://github.com
 ### On 6.1" screen  
 ---
 ![ZenPad_3S_10](/screenshots/Asus_ZenPad_3S_10.jpg)
-#### n 9.7" screen
+### n 9.7" screen
