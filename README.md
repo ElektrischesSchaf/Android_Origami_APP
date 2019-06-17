@@ -10,3 +10,16 @@ This is an upgraded version from [my previous OpenGL project](https://github.com
 ---
 ![ZenPad_3S_10](/screenshots/Asus_ZenPad_3S_10.jpg)
 ### On 9.7" screen
+---
+![rotate_around_x_axis](/screenshots/rotate_x.gif)
+### rotate around x axis
+---
+![rotate_around_y_axis](/screenshots/rotate_y.gif)
+### rotate around y axis
+---
+![rotate_around_z_axis](/screenshots/rotate_z.gif)
+### rotate around z axis
+---
+![play](/screenshots/play.gif)
+### start the origami
+---
