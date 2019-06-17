@@ -5,7 +5,7 @@ This is an upgraded version from [my previous OpenGL project](https://github.com
 
 ## Layout  
 ---
-![S9_plus](/screenshots/Samsung_S9_Plus.jpg) | ![ZenPad_3S_10](/screenshots/Asus_ZenPad_3S_10.jpg)
+![S9_plus](/screenshots/Samsung_S9_Plus.jpg)  
 ### On 6.1" screen
 ---
 ![ZenPad_3S_10](/screenshots/Asus_ZenPad_3S_10.jpg)
