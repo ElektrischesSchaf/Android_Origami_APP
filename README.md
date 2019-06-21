@@ -11,6 +11,8 @@ This is an upgraded version from [my previous OpenGL project](https://github.com
 ![ZenPad_3S_10](/screenshots/Asus_ZenPad_3S_10.jpg)
 ### On 9.7" screen
 ---
+## Functions
+---
 ![rotate_around_x_axis](/screenshots/rotate_x.gif)
 ### rotate around x axis
 ---
@@ -23,3 +25,5 @@ This is an upgraded version from [my previous OpenGL project](https://github.com
 ![play](/screenshots/play.gif)
 ### start the origami
 ---
+## The index of each part in my code
+![structure](/screenshots/structure)
