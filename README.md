@@ -5,7 +5,7 @@ This is an upgraded version from [my previous OpenGL project](https://github.com
 
 ## The coordinate and index of each part in my design  
 
- Part | Vertices
+ Part | Vertices (In counterclockwise order)
 -----:|:------------------------------------
  1    | (0, 0), (0, 15), (-15, 15)
  2    | (0, 0), (85, 85), (85, 115), (70, 130), (25, 130), (0, 105)
