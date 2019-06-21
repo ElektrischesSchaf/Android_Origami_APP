@@ -28,7 +28,7 @@ This is an upgraded version from [my previous OpenGL project](https://github.com
 ## The index of each part in my code
 ![structure](/screenshots/structure.jpg)  
  Part | Vertices                             
------:|:------------------------------------
+-----:|:------------------------------------  
  1    | (0,0) (0,15) (-15,15)                
  2    | (0,0) (85,85) (85,115)               
       | (70,130) (25,130) (0,105)      
@@ -44,4 +44,10 @@ This is an upgraded version from [my previous OpenGL project](https://github.com
  10   | (0,0) (110,110) (0,110)             
  11   | (0,0) (-25,25) (-25,0 )             
  12   | (0,0) (-25,0) (-25,-25)             
- 13   | (0,0) (-15,15) (-15,0)              
+ 13   | (0,0) (-15,15) (-15,0)  
+ ---
+ Age           | Time  | Food | Gold | Requirement
+--------------|:-----:|-----:| ----:|------------------------
+Feudal Age    | 02:10 |  500 |    0 | Dark Age building x 2
+Castle Age    | 02:40 |  800 |  200 | Feudal Age building x 2
+Imperial Age  | 03:30 | 1000 |  800 | Castle Age building x 2   
