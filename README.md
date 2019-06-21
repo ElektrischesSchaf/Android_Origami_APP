@@ -3,7 +3,7 @@ This is an upgraded version from [my previous OpenGL project](https://github.com
 
 ## Development tools: Android NDK, CMake, OpenGL ES  
 
-## The index of each part in my code
+## The coordinate and index of each part in my design  
 
  Part | Vertices
 -----:|:------------------------------------
