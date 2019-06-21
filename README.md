@@ -26,4 +26,4 @@ This is an upgraded version from [my previous OpenGL project](https://github.com
 ### start the origami
 ---
 ## The index of each part in my code
-![structure](/screenshots/structure)
+![structure](/screenshots/structure.jpg)
