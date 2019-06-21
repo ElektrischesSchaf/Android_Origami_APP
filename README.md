@@ -43,5 +43,5 @@ This is an upgraded version from [my previous OpenGL project](https://github.com
 ### rotate around z axis
 ---
 ![play](/screenshots/play.gif)
-### start the origami
+### Press "Play" to start the origami
 ---
