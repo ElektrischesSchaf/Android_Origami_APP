@@ -20,7 +20,8 @@ This is an upgraded version from [my previous OpenGL project](https://github.com
  11   | (0, 0), (-25, 25), (-25, 0)
  12   | (0, 0), (-25, 0), (-25, -25)
  13   | (0, 0), (-15, 15), (-15, 0)
- ---
+   
+   
 ![structure](/screenshots/structure.jpg)
 
 ## Layout  
