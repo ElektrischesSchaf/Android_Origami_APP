@@ -1,7 +1,8 @@
 # Android Origami APP  
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0004--1854--4003-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0004-1854-4003)
 [![License](https://img.shields.io/github/license/ElektrischesSchaf/Android_Origami_APP?color=750014)](./LICENSE)
-[![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)  
+
 ---
 ### Available on [Google Play Store](https://play.google.com/store/apps/details?id=schaf.elektrisches.android_origami).
 This is an upgraded version from [my previous OpenGL project](https://github.com/ElektrischesSchaf/Origami_Heart).  
@@ -51,3 +52,4 @@ This is an upgraded version from [my previous OpenGL project](https://github.com
 ![play](/screenshots/play.gif)
 ### Press "Play" to start the origami
 ---
+This work by [Hsi-Chih Wu](https://orcid.org/0009-0004-1854-4003) is licensed under [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/).
